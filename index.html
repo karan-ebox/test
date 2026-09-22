@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Task List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="task-app">
+      <h1>My tasks</h1>
+      <p class="subtitle">Keep the next small thing in view.</p>
+      <form id="task-form">
+        <label class="sr-only" for="task-input">New task</label>
+        <input id="task-input" name="task" placeholder="What needs doing?" required />
+        <button type="submit">Add task</button>
+      </form>
+      <ul id="task-list" aria-live="polite"></ul>
+      <p id="task-count">0 tasks remaining</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
